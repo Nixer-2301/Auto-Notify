@@ -1,4 +1,4 @@
-# Auto Notify
+# Auto Notify   #自动通知
 
 轻量级 Windows 定时通知工具，支持每日定时提醒和按日期一次性提醒。
 
@@ -24,10 +24,6 @@
 ├── requirements.txt        # Python 依赖
 ├── icon.png                # 应用图标（PNG）
 ├── icon.ico                # 应用图标（ICO，打包用）
-├── release/
-│   └── v1.2/
-│       ├── code/           # v1.2 源码归档
-│       └── package/        # v1.2 打包产物
 └── README.md
 ```
 
@@ -38,13 +34,13 @@
 
 ## 安装依赖
 
-```bash
+```bash   ”“bash
 pip install -r requirements.txt
 ```
 
 ## 运行
 
-```bash
+```bash   ”“bash
 python main.py
 ```
 
@@ -52,7 +48,7 @@ python main.py
 
 数据目录固定为：
 
-```text
+```text   ' ' '文本
 C:\Users\{当前用户名}\AppData\Local\Auto-Notify\
 ├── notifications.json  # 通知数据
 └── config.json          # 窗口位置等配置
@@ -68,13 +64,13 @@ C:\Users\{当前用户名}\AppData\Local\Auto-Notify\
 
 需要安装 Nuitka：
 
-```bash
+```bash   ”“bash
 pip install nuitka zstandard ordered-set
 ```
 
 打包命令：
 
-```bash
+```bash   ”“bash
 python -m nuitka --onefile --low-memory --windows-console-mode=disable --enable-plugin=tk-inter --windows-icon-from-ico=icon.ico --include-data-files=icon.png=icon.png --output-dir=dist --assume-yes-for-downloads --zig main.py
 ```
 
