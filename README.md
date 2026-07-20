@@ -1,4 +1,4 @@
-# Auto Notify   #自动通知
+# Auto Notify  自动通知
 
 轻量级 Windows 定时通知工具，支持每日定时提醒和按日期一次性提醒。
 
